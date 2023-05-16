@@ -1,0 +1,12 @@
+movies\controller\ControllerLoginRegister.class
+movies\entity\Rating.class
+movies\controller\ControllerMappingBetweenPages.class
+movies\MoviesApplication.class
+movies\entity\Admin.class
+movies\service\ServiceMovie.class
+movies\dao\DaoMovie.class
+movies\controller\ControllerMovie.class
+movies\entity\User.class
+movies\service\ServiceLoginRegister.class
+movies\dao\DaoLoginRegister.class
+movies\entity\Movie.class
