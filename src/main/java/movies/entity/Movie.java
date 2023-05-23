@@ -9,10 +9,10 @@ public class Movie {
 	private int id;
 	private String name;
 	private String genres;
-	private double buget;
+	private double budget;
 	private double gross;
 	private String director;
-	private int relese;
+	private int release_year;
 	private int rating;
 	private String country;
 	private String runtime;
@@ -58,12 +58,12 @@ public class Movie {
 		this.genres = genres;
 	}
 
-	public double getBuget() {
-		return buget;
+	public double getBudget() {
+		return budget;
 	}
 
-	public void setBuget(double buget) {
-		this.buget = buget;
+	public void setBudget(double buget) {
+		this.budget = buget;
 	}
 
 	public double getGross() {
@@ -82,12 +82,12 @@ public class Movie {
 		this.director = director;
 	}
 
-	public int getRelese() {
-		return relese;
+	public int getRelease_year() {
+		return release_year;
 	}
 
-	public void setRelese(int relese) {
-		this.relese = relese;
+	public void setRelease_year(int release_year) {
+		this.release_year = release_year;
 	}
 
 	public int getRating() {
@@ -100,8 +100,8 @@ public class Movie {
 
 	@Override
 	public String toString() {
-		return "Movie [id=" + id + ", name=" + name + ", genres=" + genres + ", buget=" + buget + ", gross=" + gross
-				+ ", director=" + director + ", relese=" + relese + ", rating=" + rating + ", country=" + country
+		return "Movie [id=" + id + ", name=" + name + ", genres=" + genres + ", buget=" + budget + ", gross=" + gross
+				+ ", director=" + director + ", relese=" + release_year + ", rating=" + rating + ", country=" + country
 				+ ", runtime=" + runtime + "]";
 	}
 

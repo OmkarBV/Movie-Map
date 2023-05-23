@@ -30,14 +30,14 @@ public class DaoMovie {
 	public List<Movie> sortBugetLH() {
 		Session session = sf.openSession();
 		Criteria cri = session.createCriteria(Movie.class);
-		cri.addOrder(Order.asc("buget"));
+		cri.addOrder(Order.asc("budget"));
 		return cri.list();
 	}
 
 	public List<Movie> sortBugetHL() {
 		Session session = sf.openSession();
 		Criteria cri = session.createCriteria(Movie.class);
-		cri.addOrder(Order.desc("buget"));
+		cri.addOrder(Order.desc("budget"));
 		return cri.list();
 	}
 
@@ -51,14 +51,14 @@ public class DaoMovie {
 	public List<Movie> releseYear(int year) {
 		Session session = sf.openSession();
 		Criteria cri = session.createCriteria(Movie.class);
-		cri.add(Restrictions.eq("relese", year));
+		cri.add(Restrictions.eq("release_year", year));
 		return cri.list();
 	}
 
 	public List<Movie> releseBetweenYear(int firsty, int lasty) {
 		Session session = sf.openSession();
 		Criteria cri = session.createCriteria(Movie.class);
-		cri.add(Restrictions.between("relese", firsty, lasty));
+		cri.add(Restrictions.between("release_year", firsty, lasty));
 		return cri.list();
 	}
 
@@ -86,14 +86,14 @@ public class DaoMovie {
 	public List<Movie> hitMovie() {
 		Session session = sf.openSession();
 		Criteria cri = session.createCriteria(Movie.class);
-		cri.add(Restrictions.geProperty("gross", "buget"));
+		cri.add(Restrictions.geProperty("gross", "budget"));
 		return cri.list();
 	}
 
 	public List<Movie> flopMovie() {
 		Session session = sf.openSession();
 		Criteria cri = session.createCriteria(Movie.class);
-		cri.add(Restrictions.leProperty("gross", "buget"));
+		cri.add(Restrictions.leProperty("gross", "budget"));
 		return cri.list();
 	}
 

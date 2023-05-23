@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import movies.entity.Movie;
-import movies.entity.User;
 import movies.service.ServiceMovie;
 
 @Controller
@@ -39,7 +38,7 @@ public class ControllerMovie {
 	@RequestMapping("/releseyear")
 	public ModelAndView releseYear(Movie movie) {
 		ModelAndView mv = new ModelAndView();
-		mv.addObject("data", service.releseYear(movie.getRelese()));
+		mv.addObject("data", service.releseYear(movie.getRelease_year()));
 		mv.addObject("isadmin", ControllerLoginRegister.isadmin);
 		mv.setViewName("home");
 		return mv;

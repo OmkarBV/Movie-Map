@@ -543,7 +543,7 @@ input[type=submit] {
 			</td>
 			<td>
 				<%
-				out.print(m.getBuget());
+				out.print(m.getBudget());
 				%>
 			</td>
 			<td>
@@ -558,7 +558,7 @@ input[type=submit] {
 			</td>
 			<td>
 				<%
-				out.print(m.getRelese());
+				out.print(m.getRelease_year());
 				%>
 			</td>
 			<td>
